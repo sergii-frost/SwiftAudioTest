@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarWarsAudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star wars logo" translatesAutoresizingMaskIntoConstraints="NO" id="vAR-w8-kCk">
+                                <rect key="frame" x="8" y="28" width="304" height="181.5"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vAR-w8-kCk" secondAttribute="height" multiplier="236:141" id="Dcp-NX-eDi"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ug9-CE-ZNF" appends="YES" id="fgx-oy-K6E"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="r2d2" translatesAutoresizingMaskIntoConstraints="NO" id="8QL-2M-N6M">
+                                <rect key="frame" x="8" y="233.5" width="148" height="148"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8QL-2M-N6M" secondAttribute="height" multiplier="1:1" id="k6y-5i-qpk"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rhj-4f-9sd" appends="YES" id="DKx-Cc-ajg"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoda" translatesAutoresizingMaskIntoConstraints="NO" id="5ZV-Nr-bBQ">
+                                <rect key="frame" x="164" y="233.5" width="148" height="148"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5ZV-Nr-bBQ" secondAttribute="height" multiplier="1:1" id="GZ2-ww-qOF"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TDN-gG-1FN" appends="YES" id="Tnx-7G-iew"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rotating_lightsaber" translatesAutoresizingMaskIntoConstraints="NO" id="wqT-DV-J6v">
+                                <rect key="frame" x="8" y="389.5" width="148" height="148"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wqT-DV-J6v" secondAttribute="height" multiplier="1:1" id="gAt-9h-IZE"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="CE0-fQ-D3g" appends="YES" id="QQd-R3-d9E"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vader" translatesAutoresizingMaskIntoConstraints="NO" id="lxy-ZC-Mw1">
+                                <rect key="frame" x="164" y="389.5" width="148" height="148"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lxy-ZC-Mw1" secondAttribute="height" multiplier="1:1" id="KAw-Q4-SG6"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="btV-FD-LmC" appends="YES" id="GiP-8i-VgL"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vAR-w8-kCk" secondAttribute="trailing" constant="8" id="0MW-Nf-PCK"/>
+                            <constraint firstItem="lxy-ZC-Mw1" firstAttribute="width" secondItem="lxy-ZC-Mw1" secondAttribute="height" multiplier="1:1" id="1Mm-Pg-py1"/>
+                            <constraint firstItem="lxy-ZC-Mw1" firstAttribute="trailing" secondItem="5ZV-Nr-bBQ" secondAttribute="trailing" id="3fX-jG-CUE"/>
+                            <constraint firstItem="lxy-ZC-Mw1" firstAttribute="width" secondItem="lxy-ZC-Mw1" secondAttribute="height" multiplier="1:1" id="5fX-Vz-xZr"/>
+                            <constraint firstItem="lxy-ZC-Mw1" firstAttribute="leading" secondItem="5ZV-Nr-bBQ" secondAttribute="leading" id="EvU-uj-okq"/>
+                            <constraint firstItem="5ZV-Nr-bBQ" firstAttribute="width" secondItem="8QL-2M-N6M" secondAttribute="width" id="GZq-lF-IXa"/>
+                            <constraint firstItem="lxy-ZC-Mw1" firstAttribute="top" secondItem="5ZV-Nr-bBQ" secondAttribute="bottom" constant="8" id="HCd-5r-2SM"/>
+                            <constraint firstItem="vAR-w8-kCk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="K8O-b5-KWf"/>
+                            <constraint firstItem="lxy-ZC-Mw1" firstAttribute="width" secondItem="8QL-2M-N6M" secondAttribute="width" id="N50-S6-4RP"/>
+                            <constraint firstItem="wqT-DV-J6v" firstAttribute="leading" secondItem="8QL-2M-N6M" secondAttribute="leading" id="P34-na-s5s"/>
+                            <constraint firstItem="5ZV-Nr-bBQ" firstAttribute="width" secondItem="5ZV-Nr-bBQ" secondAttribute="height" multiplier="1:1" id="WCj-6l-Gin"/>
+                            <constraint firstItem="wqT-DV-J6v" firstAttribute="width" secondItem="wqT-DV-J6v" secondAttribute="height" multiplier="1:1" id="b9v-3e-4Od"/>
+                            <constraint firstItem="5ZV-Nr-bBQ" firstAttribute="top" secondItem="vAR-w8-kCk" secondAttribute="bottom" constant="24" id="eEb-KM-4Kq"/>
+                            <constraint firstItem="wqT-DV-J6v" firstAttribute="width" secondItem="8QL-2M-N6M" secondAttribute="width" id="eNH-Y9-LIz"/>
+                            <constraint firstItem="vAR-w8-kCk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="exE-fv-9vJ"/>
+                            <constraint firstItem="wqT-DV-J6v" firstAttribute="width" secondItem="wqT-DV-J6v" secondAttribute="height" multiplier="1:1" id="ftl-cl-rVN"/>
+                            <constraint firstItem="5ZV-Nr-bBQ" firstAttribute="leading" secondItem="8QL-2M-N6M" secondAttribute="trailing" constant="8" id="jy3-PD-Cve"/>
+                            <constraint firstItem="lxy-ZC-Mw1" firstAttribute="width" secondItem="lxy-ZC-Mw1" secondAttribute="height" multiplier="1:1" id="nWx-sR-SIO"/>
+                            <constraint firstItem="5ZV-Nr-bBQ" firstAttribute="top" secondItem="8QL-2M-N6M" secondAttribute="top" id="pX8-Jc-k9M"/>
+                            <constraint firstAttribute="trailing" secondItem="5ZV-Nr-bBQ" secondAttribute="trailing" constant="8" id="qMH-8v-CJG"/>
+                            <constraint firstItem="8QL-2M-N6M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="rCW-Sa-yN2"/>
+                            <constraint firstItem="wqT-DV-J6v" firstAttribute="top" secondItem="8QL-2M-N6M" secondAttribute="bottom" constant="8" id="yjx-ew-KQT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rhj-4f-9sd" userLabel="R2D2 Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="playR2D2:" destination="BYZ-38-t0r" id="IAa-e9-HO0"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="TDN-gG-1FN" userLabel="Yoda Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="playYoda:" destination="BYZ-38-t0r" id="fKi-Tb-U1e"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CE0-fQ-D3g" userLabel="LightSaber Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="playLightSaber:" destination="BYZ-38-t0r" id="lZk-mQ-bN5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="btV-FD-LmC" userLabel="Vader Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="playVader:" destination="BYZ-38-t0r" id="p0w-va-iYl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ug9-CE-ZNF" userLabel="Star Wars Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="playStarWars:" destination="BYZ-38-t0r" id="KFh-SJ-1lk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="300.80000000000001" y="484.21999999999997"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="r2d2" width="437" height="437"/>
+        <image name="rotating_lightsaber" width="500" height="500"/>
+        <image name="star wars logo" width="236" height="141"/>
+        <image name="vader" width="236" height="303"/>
+        <image name="yoda" width="236" height="250"/>
+    </resources>
+</document>
